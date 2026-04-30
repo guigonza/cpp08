@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Guille <Guille@student.42.fr>              +#+  +:+       +#+        */
+/*   By: guigonza <guigonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 19:18:56 by Guille            #+#    #+#             */
-/*   Updated: 2026/03/04 19:37:08 by Guille           ###   ########.fr       */
+/*   Updated: 2026/04/30 15:20:59 by guigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,11 @@ int main()
 	big.addRange(bv.begin(), bv.end());
 	std::cout << big.shortestSpan() << std::endl;
 	std::cout << big.longestSpan() << std::endl;
-		// Test excepción — span lleno
 	try {
 		sp.addNumber(99);
 	} catch (std::exception& e) {
 		std::cerr << e.what() << std::endl;
 	}
-
-	// Test excepción — menos de 2 elementos
 	try {
 		Span empty(5);
 		empty.shortestSpan();
